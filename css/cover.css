@@ -1,0 +1,47 @@
+
+.card .imgcard1 {
+
+    background: url(../images/Portada\ 1A.jpg);
+    width: 40%;
+    height: 100%;
+    background-size: cover;
+
+}
+
+.card .imgcard2 {
+
+    background: url(../images/Portada\ 2A.jpg);
+    width: 40%;
+    height: 100%;
+    background-size: cover;
+
+}
+
+
+.card .imgcard3 {
+
+    background: url(../images/Portada\ 1B.jpg);
+    width: 40%;
+    height: 100%;
+    background-size: cover;
+
+}
+
+
+.card .imgcard4 {
+
+    background: url(../images/oso.jpg);
+    width: 40%;
+    height: 100%;
+    background-size: cover;
+
+}
+
+.card .imgcard5 {
+
+    background: url(../images/oso.jpg);
+    width: 40%;
+    height: 100%;
+    background-size: cover;
+
+}
