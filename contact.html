@@ -2,6 +2,21 @@
 <!doctype html>
 <html lang="en">
 <head>
+
+<style>
+body{background:#59ABE3;margin:0}
+.form{width:340px;height:440px;background:#e6e6e6;border-radius:8px;box-shadow:0 0 40px -10px #000;margin:calc(50vh - 220px) auto;padding:20px 30px;max-width:calc(100vw - 40px);box-sizing:border-box;font-family:'Montserrat',sans-serif;position:relative}
+h2{margin:10px 0;padding-bottom:10px;width:180px;color:#78788c;border-bottom:3px solid #78788c}
+input{width:100%;padding:10px;box-sizing:border-box;background:none;outline:none;resize:none;border:0;font-family:'Montserrat',sans-serif;transition:all .3s;border-bottom:2px solid #bebed2}
+input:focus{border-bottom:2px solid #78788c}
+p:before{content:attr(type);display:block;margin:28px 0 0;font-size:14px;color:#5a5a5a}
+button{float:right;padding:8px 12px;margin:8px 0 0;font-family:'Montserrat',sans-serif;border:2px solid #78788c;background:0;color:#5a5a6e;cursor:pointer;transition:all .3s}
+button:hover{background:#78788c;color:#fff}
+div{content:'Hi';position:absolute;bottom:-15px;right:-20px;background:#50505a;color:#fff;width:320px;padding:16px 4px 16px 0;border-radius:6px;font-size:13px;box-shadow:10px 10px 40px -14px #000}
+span{margin:0 5px 0 15px}
+</style>
+
+
 <title>Contact Form 01</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -10,104 +25,18 @@
 <link rel="stylesheet" href="css/style.css">
 <script nonce="3012fa7b-0177-43d9-8623-c8e8173e5cef">(function(w,d){!function(U,V,W,X){U[W]=U[W]||{};U[W].executed=[];U.zaraz={deferred:[],listeners:[]};U.zaraz.q=[];U.zaraz._f=function(Y){return async function(){var Z=Array.prototype.slice.call(arguments);U.zaraz.q.push({m:Y,a:Z})}};for(const $ of["track","set","debug"])U.zaraz[$]=U.zaraz._f($);U.zaraz.init=()=>{var ba=V.getElementsByTagName(X)[0],bb=V.createElement(X),bc=V.getElementsByTagName("title")[0];bc&&(U[W].t=V.getElementsByTagName("title")[0].text);U[W].x=Math.random();U[W].w=U.screen.width;U[W].h=U.screen.height;U[W].j=U.innerHeight;U[W].e=U.innerWidth;U[W].l=U.location.href;U[W].r=V.referrer;U[W].k=U.screen.colorDepth;U[W].n=V.characterSet;U[W].o=(new Date).getTimezoneOffset();if(U.dataLayer)for(const bg of Object.entries(Object.entries(dataLayer).reduce(((bh,bi)=>({...bh[1],...bi[1]})),{})))zaraz.set(bg[0],bg[1],{scope:"page"});U[W].q=[];for(;U.zaraz.q.length;){const bj=U.zaraz.q.shift();U[W].q.push(bj)}bb.defer=!0;for(const bk of[localStorage,sessionStorage])Object.keys(bk||{}).filter((bm=>bm.startsWith("_zaraz_"))).forEach((bl=>{try{U[W]["z_"+bl.slice(7)]=JSON.parse(bk.getItem(bl))}catch{U[W]["z_"+bl.slice(7)]=bk.getItem(bl)}}));bb.referrerPolicy="origin";bb.src="/cdn-cgi/zaraz/s.js?z="+btoa(encodeURIComponent(JSON.stringify(U[W])));ba.parentNode.insertBefore(bb,ba)};["complete","interactive"].includes(V.readyState)?zaraz.init():U.addEventListener("DOMContentLoaded",zaraz.init)}(w,d,"zarazData","script");})(window,document);</script></head>
 <body>
-<section class="ftco-section">
-<div class="container">
-<div class="row justify-content-center">
-<div class="col-md-6 text-center mb-5">
-<h2 class="heading-section">Contact Form #01</h2>
-</div>
-</div>
-<div class="row justify-content-center">
-<div class="col-lg-10 col-md-12">
-<div class="wrapper">
-<div class="row no-gutters">
-<div class="col-md-7 d-flex align-items-stretch">
-<div class="contact-wrap w-100 p-md-5 p-4">
-<h3 class="mb-4">Get in touch</h3>
-<div id="form-message-warning" class="mb-4"></div>
-<div id="form-message-success" class="mb-4">
-Your message was sent, thank you!
-</div>
-<form method="POST" id="contactForm" name="contactForm">
-<div class="row">
-<div class="col-md-6">
-<div class="form-group">
-<input type="text" class="form-control" name="name" id="name" placeholder="Name">
-</div>
-</div>
-<div class="col-md-6">
-<div class="form-group">
-<input type="email" class="form-control" name="email" id="email" placeholder="Email">
-</div>
-</div>
-<div class="col-md-12">
-<div class="form-group">
-<input type="text" class="form-control" name="subject" id="subject" placeholder="Subject">
-</div>
-</div>
-<div class="col-md-12">
-<div class="form-group">
-<textarea name="message" class="form-control" id="message" cols="30" rows="7" placeholder="Message"></textarea>
-</div>
-</div>
-<div class="col-md-12">
-<div class="form-group">
-<input type="submit" value="Send Message" class="btn btn-primary">
-<div class="submitting"></div>
-</div>
-</div>
-</div>
+
+<form class="form">
+  <h2>CONTACT US</h2>
+  <p type="Name:"><input placeholder="Write your name here.."></input></p>
+  <p type="Email:"><input placeholder="Let us know how to contact you back.."></input></p>
+  <p type="Message:"><input placeholder="What would you like to tell us.."></input></p>
+  <button>Send Message</button>
+  <div>
+    <span class="fa fa-phone"></span>001 1023 567
+    <span class="fa fa-envelope-o"></span> contact@company.com
+  </div>
 </form>
-</div>
-</div>
-<div class="col-md-5 d-flex align-items-stretch">
-<div class="info-wrap bg-primary w-100 p-lg-5 p-4">
-<h3 class="mb-4 mt-md-4">Contact us</h3>
-<div class="dbox w-100 d-flex align-items-start">
-<div class="icon d-flex align-items-center justify-content-center">
-<span class="fa fa-map-marker"></span>
-</div>
-<div class="text pl-3">
-<p><span>Address:</span> 198 West 21th Street, Suite 721 New York NY 10016</p>
-</div>
-</div>
-<div class="dbox w-100 d-flex align-items-center">
-<div class="icon d-flex align-items-center justify-content-center">
-<span class="fa fa-phone"></span>
-</div>
-<div class="text pl-3">
-<p><span>Phone:</span> <a href="tel://1234567920">+ 1235 2355 98</a></p>
-</div>
-</div>
-<div class="dbox w-100 d-flex align-items-center">
-<div class="icon d-flex align-items-center justify-content-center">
-<span class="fa fa-paper-plane"></span>
-</div>
-<div class="text pl-3">
-<p><span>Email:</span> <a href="/cdn-cgi/l/email-protection#f0999e969fb0899f858283998495de939f9d"><span class="__cf_email__" data-cfemail="4b22252d240b32243e3938223f2e65282426">[email&#160;protected]</span></a></p>
-</div>
-</div>
-<div class="dbox w-100 d-flex align-items-center">
-<div class="icon d-flex align-items-center justify-content-center">
-<span class="fa fa-globe"></span>
-</div>
-<div class="text pl-3">
-<p><span>Website</span> <a href="#">yoursite.com</a></p>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="js/jquery.min.js"></script>
-<script src="js/popper.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/jquery.validate.min.js"></script>
-<script src="js/main.js"></script>
-<script defer src="https://static.cloudflareinsights.com/beacon.min.js/v8b253dfea2ab4077af8c6f58422dfbfd1689876627854" integrity="sha512-bjgnUKX4azu3dLTVtie9u6TKqgx29RBwfj3QXYt5EKfWM/9hPSAI/4qcV5NACjwAo8UtTeWefx6Zq5PHcMm7Tg==" data-cf-beacon='{"rayId":"7fe5d547ebba4c0a","token":"cd0b4b3a733644fc843ef0b185f98241","version":"2023.8.0","si":100}' crossorigin="anonymous"></script>
+  
 </body>
 </html>
