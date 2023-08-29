@@ -67,24 +67,18 @@
 
 
     <br>
-    <div class="grid-container">
-
-      
-      <img class="grid-item" src="images/Picture 1A.jpg" width="230" height="250" />
-      <img class="grid-item" src="images/Picture 1B.jpg" width="230" height="250" />
-
-    </div>
-
-    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.js"></script>
-    <script>
-      var elem = document.querySelector(".grid-container");
-      var msnry = new Masonry(elem, {
-        // options
-        itemSelector: ".grid-item",
-        columnWidth: 230,
-        gutter: 20,
-        isFitWidth: true
-      });
+<form class="form">
+  <h2>CONTACT US</h2>
+  <p type="Name:"><input placeholder="Write your name here.."></input></p>
+  <p type="Email:"><input placeholder="Let us know how to contact you back.."></input></p>
+  <p type="Message:"><input placeholder="What would you like to tell us.."></input></p>
+  <button>Send Message</button>
+  <div>
+    <span class="fa fa-phone"></span>001 1023 567
+    <span class="fa fa-envelope-o"></span> contact@company.com
+  </div>
+</form>
+ 
     </script>
     <script src="js/script.js"></script>
   </body>
